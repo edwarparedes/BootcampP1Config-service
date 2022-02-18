@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/edwarparedes/config-repository
+          #search-paths: config-data - Solo cuando apuntas a una carpeta del repositorio definido en uri
+  application:
+    name: config-service
